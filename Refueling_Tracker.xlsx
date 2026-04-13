@@ -1,0 +1,18 @@
+| SL# | Date       | Time     | Forklift    | Operator Name | Previous Meter Reading | Current Meter Reading | Filled (L) | Mileage/Hours | Remarks |
+|-----|------------|----------|-------------|---------------|-----------------------|-----------------------|------------|---------------|---------|
+| 1   | 2026-04-13 | 06:30:31 | DFL#01     | John Doe      | 2000                  | 2050                  | 50         | 50            |         |
+| 2   | 2026-04-13 | 06:30:31 | DFL#02     | Jane Smith    | 1500                  | 1520                  | 20         | 20            |         |
+| 3   | 2026-04-13 | 06:30:31 | DFL#03     | Mike Johnson   | 3000                  | 3050                  | 50         | 50            |         |
+| 4   | 2026-04-13 | 06:30:31 | DFL#04     | Emily Davis    | 2500                  | 2550                  | 50         | 50            |         |
+| 5   | 2026-04-13 | 06:30:31 | DFL#05     | Chris Lee      | 1750                  | 1775                  | 25         | 25            |         |
+| 6   | 2026-04-13 | 06:30:31 | DFL#06     | Anna Brown     | 4000                  | 4050                  | 50         | 50            |         |
+| 7   | 2026-04-13 | 06:30:31 | DFL#07     | Robert White   | 4500                  | 4550                  | 50         | 50            |         |
+| 8   | 2026-04-13 | 06:30:31 | DFL#08     | Sarah Green    | 3700                  | 3750                  | 50         | 50            |         |
+
+### Sample Formulas:
+- **Filled (L)**: Use fill quantity for each refueling instance.
+- **Mileage/Hours**: Calculate distance traveled or hours operated during the refueling interval.
+- **Dropdown for Forklift**: Use data validation to create a dropdown list containing DFL#01 to DFL#08.  
+
+### Additional Notes:
+- Make sure to format Date and Time columns properly in Excel.
