@@ -1,18 +1,13 @@
-| SL# | Date       | Time     | Forklift    | Operator Name | Previous Meter Reading | Current Meter Reading | Filled (L) | Mileage/Hours | Remarks |
-|-----|------------|----------|-------------|---------------|-----------------------|-----------------------|------------|---------------|---------|
-| 1   | 2026-04-13 | 06:30:31 | DFL#01     | John Doe      | 2000                  | 2050                  | 50         | 50            |         |
-| 2   | 2026-04-13 | 06:30:31 | DFL#02     | Jane Smith    | 1500                  | 1520                  | 20         | 20            |         |
-| 3   | 2026-04-13 | 06:30:31 | DFL#03     | Mike Johnson   | 3000                  | 3050                  | 50         | 50            |         |
-| 4   | 2026-04-13 | 06:30:31 | DFL#04     | Emily Davis    | 2500                  | 2550                  | 50         | 50            |         |
-| 5   | 2026-04-13 | 06:30:31 | DFL#05     | Chris Lee      | 1750                  | 1775                  | 25         | 25            |         |
-| 6   | 2026-04-13 | 06:30:31 | DFL#06     | Anna Brown     | 4000                  | 4050                  | 50         | 50            |         |
-| 7   | 2026-04-13 | 06:30:31 | DFL#07     | Robert White   | 4500                  | 4550                  | 50         | 50            |         |
-| 8   | 2026-04-13 | 06:30:31 | DFL#08     | Sarah Green    | 3700                  | 3750                  | 50         | 50            |         |
+| SL# | Date       | Time     | Forklift | Operator Name | Previous Meter Reading | Current Meter Reading | Filled (L) | Mileage/Hours | Remarks               |
+|-----|------------|----------|----------|---------------|-----------------------|----------------------|------------|---------------|-----------------------|
+| 1   | 2026-04-13 | 06:35:22 | F1       | John Doe      | 1000                  | 1020                 | 20         | 2             | Initial refueling       |
+| 2   | 2026-04-12 | 08:30:00 | F2       | Jane Smith    | 1500                  | 1505                 | 5          | 1             | Partial refueling      |
+| 3   | 2026-04-11 | 12:15:00 | F1       | John Doe      | 980                   | 1000                 | 20         | 2             | Initial refueling       |
+| 4   | 2026-04-10 | 09:00:00 | F3       | Jim Brown     | 700                   | 720                  | 20         | 2             | Initial refueling       |
+| 5   | 2026-04-09 | 15:45:00 | F2       | Jane Smith    | 1420                  | 1440                 | 20         | 3             | Initial refueling       |
 
-### Sample Formulas:
-- **Filled (L)**: Use fill quantity for each refueling instance.
-- **Mileage/Hours**: Calculate distance traveled or hours operated during the refueling interval.
-- **Dropdown for Forklift**: Use data validation to create a dropdown list containing DFL#01 to DFL#08.  
+**Formulas:**
+- For Mileage/Hours: `=IF(Current Meter Reading-Previous Meter Reading>0, Current Meter Reading-Previous Meter Reading, 0)`
+- For Filled (L): Add the values in the 'Filled (L)' column to keep track of total liters used.
 
-### Additional Notes:
-- Make sure to format Date and Time columns properly in Excel.
+**Note:** Sample data includes dates formatted to 'YYYY-MM-DD' and times in 'HH:MM:SS'.
